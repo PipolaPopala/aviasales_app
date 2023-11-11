@@ -1,9 +1,19 @@
-import style from './TicketList.module.scss';
+import styles from './TicketList.module.scss';
+import Ticket from '../ticket/Ticket'
 
 export default function TicketList() {
+  const arr = [
+    <Ticket />,
+    <Ticket />,
+    <Ticket />,
+    <Ticket />,
+    <Ticket />
+  ]
   return (
     <>
-    <h1>TicketList</h1>
+      {arr.map((el) => {
+        return el
+      })}
     </>
   );
 }

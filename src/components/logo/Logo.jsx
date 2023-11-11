@@ -1,9 +1,10 @@
-import style from './Logo.module.scss';
+import styles from './Logo.module.scss';
+import LogoIcon from '../../Logo.svg'
 
 export default function Logo() {
   return (
-    <div className={style.logoContainer}>
-      <img className={style.logoImage} src="../../utilits/logo.svg" alt="" />
+    <div className={styles.logoContainer}>
+      <img className={styles.logoImage} src={LogoIcon} alt="" />
     </div>
   );
 }

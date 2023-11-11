@@ -1,20 +1,22 @@
-import style from './App.module.scss';
+import styles from './App.module.scss';
 import Logo from '../logo/Logo'
 import Filter from '../filter/Filter'
 import Tabs from '../tabs/Tabs'
 import TiсketList from '../ticketList/TicketList'
+import ButtonMore from '../buttonMore/ButtonMore'
 
 export default function App() {
   return (
     <>
       <Logo />
-      <main className={style.main}>
+      <main className={styles.main}>
         <div>
           <Filter />
         </div>
-        <div className={style.tabs}>
+        <div className={styles.tabs}>
           <Tabs />
           <TiсketList />
+          <ButtonMore />
         </div>
       </main>
     </>
